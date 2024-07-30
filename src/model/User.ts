@@ -23,7 +23,7 @@ const TodoSchema: Schema<Todo> = new Schema ({
 
 
 export interface User extends Document {
-    usernsme: string;
+    username: string;
     email: string;
     password: string;
     verifyCode:string;
@@ -34,7 +34,7 @@ export interface User extends Document {
 }
 
 const UserSchema: Schema<User> = new Schema ({
-    usernsme: {
+    username: {
         type: String,
         required: [true, "Username is requird"],
         trim: true,
